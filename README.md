@@ -142,6 +142,3 @@ uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 - **Port mapping**: Compose maps `3307:3306`, so from your host use port `3307`; from inside containers use `3306`.
 - **Tables are created at startup**: `app/main.py` calls `Base.metadata.create_all(bind=engine)` when the app starts.
 
-## License
-
-Add a license if you plan to publish this project.
